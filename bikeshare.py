@@ -181,7 +181,7 @@ def load_data(city, month, day):
                         print('\t{}'.format(list_days[d]))
                     continue
                 
-    print("\nLoading took %s seconds." % round((time.time() - start_time),6))
+    print("\nLoading took {} seconds.".format(round((time.time() - start_time),6)))
     print('-'*40)
 
     return df
@@ -226,7 +226,7 @@ def station_stats(df):
     populaire_combination=combination.iloc[0]['Start Station']+" --> "+combination.iloc[0]['End Station']  
        
     print("most popular Start Station: {} \nmost popular End Station: {} \nmost popular Combinition: {}".format(popular_start_station,popular_end_station,populaire_combination))
-    print("\nThis took %s seconds." % round((time.time() - start_time),6))
+    print("\nThis took {} seconds.".format(round((time.time() - start_time),6)))
     print('-'*40)
 
 
